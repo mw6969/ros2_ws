@@ -3,7 +3,7 @@
 <package format="3">
   <name>more_interfaces</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <description>C++ custom interfaces implementation</description>
   <maintainer email="d.malysh123@gmail.com">Dmytro Malysh</maintainer>
   <license>Apache-2.0</license>
 
