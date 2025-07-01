@@ -20,9 +20,13 @@ target_link_libraries(talker PUBLIC rclcpp::rclcpp ${tutorial_interfaces_TARGETS
 add_executable(listener src/subscriber_lambda_function.cpp)
 target_link_libraries(listener PUBLIC rclcpp::rclcpp ${tutorial_interfaces_TARGETS})
 
+add_executable(listener_with_topic_statistics src/member_function_with_topic_statistics.cpp)
+target_link_libraries(listener_with_topic_statistics PUBLIC rclcpp::rclcpp ${tutorial_interfaces_TARGETS})
+
 install(TARGETS
   talker
   listener
+  listener_with_topic_statistics
   DESTINATION lib/${PROJECT_NAME})
 
 # Test support
@@ -35,12 +39,7 @@ if(BUILD_TESTING)
 
   ament_add_gtest(test_pubsub test/test_pubsub.cpp)
   if(TARGET test_pubsub)
-    target_link_libraries(test_pubsub
-      rclcpp::rclcpp
-    )
-    ament_target_dependencies(test_pubsub
-      tutorial_interfaces
-    )
+    target_link_libraries(test_pubsub rclcpp::rclcpp ${tutorial_interfaces_TARGETS})
   endif()
 endif()
 
