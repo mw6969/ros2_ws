@@ -1,0 +1,13 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from demo_keys_cpp/msg/KeyedSensorDataMsg.msg
+// generated code does not contain a copyright notice
+
+
+module demo_keys_cpp {
+  module msg {
+    struct KeyedSensorDataMsg {
+      @key int16 sensor_id;
+      string data;
+    };
+  };
+};
