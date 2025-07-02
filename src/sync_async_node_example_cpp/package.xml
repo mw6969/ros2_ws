@@ -3,7 +3,7 @@
 <package format="3">
   <name>sync_async_node_example_cpp</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <description>Walk through the extended configuration capabilities of Fast DDS in ROS 2</description>
   <maintainer email="d.malysh123@gmail.com">Dmytro Malysh</maintainer>
   <license>Apache-2.0</license>
 
